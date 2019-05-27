@@ -36,7 +36,6 @@ output_img_w = output_img_h
 
 print('output:',[output_img_h, output_img_w])
 
-#data_folder = '/data/nobackup/celebrity_hq_mask_28pts_tf'
 data_folder = '/data/nobackup/celebrity_hq_mask_bilinear_tf'
 train_file_dict = {1: '{}/celeba-r10.tfrecords'.format(data_folder), # 1024
                    2: '{}/celeba-r09.tfrecords'.format(data_folder), # 512
@@ -62,10 +61,10 @@ d_max_num_features = 512
 g_ln_rate = lr
 d_ln_rate = lr
 e_drift = 0.0001
+FLIP_RATE = 0.5
 
 conv2d_transpose_use_pn = True
-exp_name = 'face_mask_no_embedding_final'
 to_rgb_activation = 'linear'
+exp_name = 'face_mask_no_embedding_final'
 
 total_samples = 7e4
-FLIP_RATE = 0.5
