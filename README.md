@@ -36,3 +36,8 @@ To train the model for `Phase n` call `train.py` with all required parameters:
 You can also use provided bash script `starts_jobs_embedding.sh` to execuate each phase of the progressive training schedule:
 
 `./starts_jobs_embedding.sh`
+
+## Sample output
+
+![](Figures/change_latent_vectors.png)
+
