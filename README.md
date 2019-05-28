@@ -5,6 +5,7 @@ Yinhao Ren, Zhe Zhu, Yingzhou Li, Joseph Lo
 * [Here is the link to our paper (arXiv)](https://github.com/johnryh)
 
 ![](Figures/teaser.png)
+
 ## Abstract
 Recent advancements in conditional Generative Adversarial Networks
 (cGANs) have shown promises in label guided image synthesis. Semantic
@@ -22,13 +23,11 @@ face generator using  CELEBA-HQ dataset. We can generate realistic and
 high resolution facial images up to the resolution of 512 by 512
 with a mask guidance.
 
+
 ![](Figures/Sample_Space_Convolution.png)
 
-
-
-
 ## Training
-Setup the dataset to appropriate format and than modified the `config.py` file to specify the path to training data. The input pipeline is build in the `Input_Pipeline_celeba.py` using tesnorflow's Dataset API. Network impementations are in `network_utility.py`. 
+Setup the dataset in appropriate format and than modified the `data_folder` in `config.py` to specify the path to training data. The current implementation uses TfRecord format but switching to png should requires minmum modification to the `parse_func` function. The input pipeline is build in the `Input_Pipeline_celeba.py` using tesnorflow's Dataset API. Network impementations are in `network_utility.py`. 
 
 To train the model for `Phase n` call `train.py` with all required parameters:
 
