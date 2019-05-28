@@ -2,6 +2,8 @@
 
 Yinhao Ren, Zhe Zhu, Yingzhou Li, Joseph Lo
 
+* [Here is the link to our paper (arXiv)](https://github.com/johnryh)
+
 ![](Figures/teaser.png)
 ## Abstract
 Recent advancements in conditional Generative Adversarial Networks
@@ -26,9 +28,9 @@ with a mask guidance.
 
 
 ## Training
-First setup the dataset into appropriate format and than modified the `config.py` file to specify the path to training data. The input pipeline is build in the `Input_Pipeline_celeba.py` using tesnorflow's Dataset API. Network impementations are in `network_utility.py`. 
+Setup the dataset to appropriate format and than modified the `config.py` file to specify the path to training data. The input pipeline is build in the `Input_Pipeline_celeba.py` using tesnorflow's Dataset API. Network impementations are in `network_utility.py`. 
 
-To train the model for `Phase N` call `train` with all required parameters:
+To train the model for `Phase n` call `train.py` with all required parameters:
 
 `python3 -W ignore train.py --GPU NUM_GPUs --phase PHASE_NUM --smooth USE_SMOOTH --size SIZE --epoch TOTAL_EPOCH --batch_size BATCH_SIZE --lr LEARNING_RATE --n_critic NUM_CRITIC --use_embedding USE_EMBEDDING`
 
