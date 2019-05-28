@@ -2,6 +2,7 @@
 
 Yinhao Ren, Zhe Zhu, Yingzhou Li, Joseph Lo
 
+![](Figures/teaser.png)
 ## Abstract
 Recent advancements in conditional Generative Adversarial Networks
 (cGANs) have shown promises in label guided image synthesis. Semantic
@@ -19,7 +20,9 @@ face generator using  CELEBA-HQ dataset. We can generate realistic and
 high resolution facial images up to the resolution of 512 by 512
 with a mask guidance.
 
-![](teasers/teaser.png)
+![](Figures/Sample_Space_Convolution.png)
+
+
 
 
 ## Training
