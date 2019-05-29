@@ -1,8 +1,7 @@
 from config import *
 import tensorflow as tf
 import numpy as np
-import os
-import math
+import os, math
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 

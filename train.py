@@ -1,16 +1,16 @@
-from config import *
 from Input_Pipeline_celeba import *
 from network_utility import *
 from utilities import *
 
 from tqdm import tqdm
 import numpy as np
-import os
-import time
+import os, time
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 prev_phase_iter = get_prev_phase_iter()
 print('prev_phase_iter:', prev_phase_iter)
+
 if __name__ == '__main__':
 
     tf.reset_default_graph()

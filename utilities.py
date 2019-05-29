@@ -1,5 +1,4 @@
-from skimage.io import imread, imsave
-import os
+from skimage.io import imsave
 import numpy as np
 from config import *
 

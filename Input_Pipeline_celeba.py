@@ -1,8 +1,9 @@
-import numpy as np
-import tensorflow as tf
-from tqdm import tqdm
 from config import *
+
+import numpy as np
+from tqdm import tqdm
 from matplotlib import pyplot as plt
+import tensorflow as tf
 
 def tf_get_crop_value(img):
 
