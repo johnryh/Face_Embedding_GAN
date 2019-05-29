@@ -27,7 +27,7 @@ with a mask guidance.
 ![](Figures/Sample_Space_Convolution.png)
 
 ## Preparing the Dataset
-We constructed the face masks using landmarks detected by the Dilib face landmark detector (https://github.com/davisking/dlib). The files are stored in TfRecord format. [Here is the downloadable link](https://deckard.duhs.duke.edu/~yr41/celebaHQ_mask)
+We added binary face masks to the CELEBA-HQ dataset using landmarks detected by the Dilib face landmark detector (https://github.com/davisking/dlib). The files are stored in TfRecord format. [Here is the downloadable link](https://deckard.duhs.duke.edu/~yr41/celebaHQ_mask). Each file contains the same 27000 images but at differnt resolution for data steaming efficiecy.
 
 
 ## Training
