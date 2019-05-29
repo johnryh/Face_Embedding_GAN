@@ -36,15 +36,15 @@ output_img_w = output_img_h
 
 print('output:',[output_img_h, output_img_w])
 
-data_folder = '/data/nobackup/celebrity_hq_mask_bilinear_tf'
-train_file_dict = {1: '{}/celeba-r10.tfrecords'.format(data_folder), # 1024
-                   2: '{}/celeba-r09.tfrecords'.format(data_folder), # 512
-                   4: '{}/celeba-r08.tfrecords'.format(data_folder), # 256
-                   8: '{}/celeba-r07.tfrecords'.format(data_folder), # 128
-                   16: '{}/celeba-r06.tfrecords'.format(data_folder), # 64
-                   32: '{}/celeba-r05.tfrecords'.format(data_folder), # 32
-                   64: '{}/celeba-r05.tfrecords'.format(data_folder), # 16
-                   128: '{}/celeba-r05.tfrecords'.format(data_folder)} # 8
+data_folder = '/data'
+train_file_dict = {1024: '{}/celeba-r1024.tfrecords'.format(data_folder), # 1024
+                   512: '{}/celeba-r512.tfrecords'.format(data_folder), # 512
+                   256: '{}/celeba-r256.tfrecords'.format(data_folder), # 256
+                   128: '{}/celeba-r128.tfrecords'.format(data_folder), # 128
+                   64: '{}/celeba-r64.tfrecords'.format(data_folder), # 64
+                   32: '{}/celeba-r32.tfrecords'.format(data_folder), # 32
+                   16: '{}/celeba-r16.tfrecords'.format(data_folder), # 16
+                   8: '{}/celeba-r8.tfrecords'.format(data_folder)} # 8
 
 train_tfrecord_path = train_file_dict[size]
 

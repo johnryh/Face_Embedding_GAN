@@ -86,7 +86,6 @@ def conv2d(input_vol, input_dim, num_kernal, scope, kernal_size=3, stride=1, act
 
         with tf.device("/device:{}:0".format(controller)):
             initializer = tf.contrib.layers.variance_scaling_initializer(dtype=tf.float32, factor=gain)
-            #kernel = tf.get_variable('weights', [kernal_height, kernal_width, int(input_vol.shape[-1]), int(num_kernal)], initializer=initializer)
             weights = get_weight([kernal_height, kernal_width, int(input_vol.shape[-1]), int(num_kernal)], gain, use_wscale=True)
             biases = tf.get_variable('bias', [int(num_kernal)], initializer=initializer)
 
