@@ -235,7 +235,6 @@ def generator(z, phase_count, num_base_features, num_feature_decay, alpha, isTra
                 kernel_size = 3 if i < 5 else 4
                 blocks.append(conv2d_transpose(blocks[-1], num_features[-1], kernel_size, (2, 2), padding='SAME', isTrain=isTrain, name='c2d_trs_p{}'.format(i+1), use_PN=conv2d_transpose_use_pn))
                 if mask is not None and i > 0: blocks[-1] = tf.concat([blocks[-1], mask_features[i + use_embedding - 1]], axis=3)
-                print('block:',i)
 
                 blocks.append(conv2d(blocks[-1], num_features[-1], num_features[-1], 'conv_p{}_l'.format(i+1), kernal_size=3, stride=1, padding='SAME', use_PN=conv2d_transpose_use_pn))
         if phase > 1 and use_smooth:
@@ -296,7 +295,6 @@ def get_pc_var_list():
             pass
         else:
             var_list.append(v)
-            #print('pc:', v.name)
 
     return var_list
 

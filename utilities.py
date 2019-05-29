@@ -1,6 +1,7 @@
 from skimage.io import imsave
 import numpy as np
 from config import *
+import os
 
 def save_png(images, col_size, path):
 

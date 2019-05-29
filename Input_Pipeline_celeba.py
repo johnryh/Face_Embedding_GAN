@@ -45,7 +45,6 @@ def parse_func(serialized_example):
 
     # normalize image from 0 - 1
     img = (img-255/2)/(255/2)
-    #img = tf.clip_by_value(img, 0, 255)
 
     img, mask = tf_crop(img, mask)
 
