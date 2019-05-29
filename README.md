@@ -26,6 +26,10 @@ with a mask guidance.
 
 ![](Figures/Sample_Space_Convolution.png)
 
+## Preparing the Dataset
+We constructed the face masks using landmarks detected by the Dilib face landmark detector (https://github.com/davisking/dlib). The files are stored in TfRecord format. [Here is the downloadable link](https://deckard.duhs.duke.edu/~yr41/celebaHQ_mask)
+
+
 ## Training
 Setup the dataset in appropriate format and than modified the `data_folder` in `config.py` to specify the path to training data. The current implementation uses TfRecord format but switching to png should requires minmum modification to the `parse_func` function. The input pipeline is build in the `Input_Pipeline_celeba.py` using tesnorflow's Dataset API. Network impementations are in `network_utility.py`. 
 
