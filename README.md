@@ -1,8 +1,11 @@
 # Mask Embedding in conditional GAN for Guided Synthesis of High Resolution Images
+## About
 
 Yinhao Ren, Zhe Zhu, Yingzhou Li, Joseph Lo
 
-* [Here is the link to our paper (arXiv)](https://github.com/johnryh)
+This work is built upon on our re-implementation of "Progressive Growing of GANs for Improved Quality, Stability, and Variation". We achived semantic control of celebrity face generation using the proposed mask embedding techqniue for better model parameter efficiency. [Here is the link to our early release paper (arXiv)](https://github.com/johnryh).
+
+
 
 ![](Figures/teaser.png)
 
