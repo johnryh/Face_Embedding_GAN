@@ -48,7 +48,7 @@ You can also use provided bash script `starts_jobs_embedding.sh` to execuate eac
 
 ![](Figures/change_latent_vectors.png)
 
-## Cite Us
+## Cite us
 ```
 @article{Ren2019MaskEI,
   title={Mask Embedding in conditional GAN for Guided Synthesis of High Resolution Images},
