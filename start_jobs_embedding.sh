@@ -1,6 +1,3 @@
-python3 -W ignore train.py --GPU 4 --phase 1 --smooth 1 --size 32 --epoch 75 --batch_size 256 --lr 0.001 --n_critic 1 --use_embedding 1 #8
-python3 -W ignore train.py --GPU 4 --phase 1 --smooth 0 --size 32 --epoch 165 --batch_size 256 --lr 0.001 --n_critic 1 --use_embedding 1
-
 python3 -W ignore train.py --GPU 4 --phase 2 --smooth 1 --size 32 --epoch 40 --batch_size 128 --lr 0.001 --n_critic 1 --use_embedding 1 #16
 python3 -W ignore train.py --GPU 4 --phase 2 --smooth 0 --size 32 --epoch 95 --batch_size 128 --lr 0.001 --n_critic 1 --use_embedding 1
 
