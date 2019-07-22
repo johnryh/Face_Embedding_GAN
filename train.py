@@ -64,7 +64,7 @@ if __name__ == '__main__':
         print('Session Initiated')
 
 
-        if use_smooth and phase > 1:
+        if use_smooth and phase > 2:
             model.loader.restore(sess, 'runs/{}/model/phase_{}/iteration_latest/model_latest.ckpt'.format(exp_name, phase-1, prev_phase_iter))
             model.d_smooth_loader.restore(sess, 'runs/{}/model/phase_{}/iteration_latest/model_latest.ckpt'.format(exp_name, phase-1, prev_phase_iter))
 
