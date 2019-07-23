@@ -45,7 +45,7 @@ lr = float(args.lr)
 n_critic = int(args.n_critic)
 use_embedding = int(args.use_embedding)
 
-loading_img_h = int(1024/size)
+loading_img_h = size
 loading_img_w = loading_img_h
 print('loading:',[loading_img_h, loading_img_h])
 
